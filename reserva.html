@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>King Khajuna - Reserva</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="brand.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-navy">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Costa Caribe Aquatic Park</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
+          <li class="nav-item"><a class="nav-link" href="llegenda.html">La llegenda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="reserva.html">Reserva</a></li>
+          <li class="nav-item"><a class="nav-link" href="informacio.html">Informació</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container py-4">
+
+  <section class="card p-4 p-md-5" style="max-width: 640px; margin: 0 auto;">
+    <h2>Reserva el teu accés a King Khajuna</h2>
+    <p>Omple el formulari per <strong>reservar</strong> el teu torn a la torre.
+       Et confirmarem l'<em>accés Express</em> per correu electrònic.</p>
+
+    <form action="#" method="get">
+
+      <div class="mb-3">
+        <label for="nom" class="form-label">Nom i cognoms</label>
+        <input type="text" class="form-control" id="nom" name="nom" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Correu electrònic</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="dia" class="form-label">Dia de la visita</label>
+          <select id="dia" name="dia" class="form-select">
+            <option value="dilluns">Dilluns</option>
+            <option value="dimarts">Dimarts</option>
+            <option value="dimecres">Dimecres</option>
+            <option value="dijous">Dijous</option>
+            <option value="divendres">Divendres</option>
+            <option value="dissabte">Dissabte</option>
+            <option value="diumenge">Diumenge</option>
+          </select>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="persones" class="form-label">Nombre de persones</label>
+          <select id="persones" name="persones" class="form-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 o més</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <p class="form-label mb-1">Tipus d'entrada</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="general" name="tipus" value="general" checked>
+          <label class="form-check-label" for="general">General</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="express" name="tipus" value="express">
+          <label class="form-check-label" for="express">Accés Express</label>
+        </div>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter" value="si">
+        <label class="form-check-label" for="newsletter">Vull rebre novetats del parc per correu</label>
+      </div>
+
+      <div class="mb-3">
+        <label for="comentaris" class="form-label">Comentaris o peticions especials</label>
+        <textarea class="form-control" id="comentaris" name="comentaris" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-coral">Envia la reserva</button>
+      <button type="reset" class="btn btn-outline-secondary">Esborra el formulari</button>
+
+    </form>
+  </section>
+
+</main>
+
+<footer class="bg-navy text-white py-4 mt-4">
+  <div class="container">
+    <p class="mb-0"><small>Pagina amb bootstrap - Programacio Web 2 - Institut Camp Clar</small></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

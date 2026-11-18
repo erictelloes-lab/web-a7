@@ -1,0 +1,74 @@
+/* =========================================================================
+   King Khajuna - Costa Caribe Aquatic Park
+   Capa de marca sobre Bootstrap 5 (colors del mockup de Miro)
+   ========================================================================= */
+
+:root {
+  --navy:   #ee8206;
+  --teal:   #f0b907;
+  --coral:  #FF6B4A;
+  --coral-dim: #E0573A;
+  --gold:   #D9A441;
+  --sand:   #F4ECD8;
+}
+
+body {
+  background-color: #FBF8F1;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.bg-teal {
+  background-color: var(--teal) !important;
+}
+
+.bg-navy {
+  background-color: var(--navy) !important;
+}
+
+.text-navy {
+  color: var(--navy) !important;
+}
+
+.text-coral {
+  color: var(--coral) !important;
+}
+
+/* Botó principal de marca (coral), per sobre dels btn-* de Bootstrap */
+.btn-coral {
+  background-color: var(--coral);
+  border-color: var(--coral);
+  color: #ffffff;
+}
+
+.btn-coral:hover,
+.btn-coral:focus {
+  background-color: var(--coral-dim);
+  border-color: var(--coral-dim);
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--coral) !important;
+}
+
+.card-stat {
+  background-color: var(--sand);
+}
+
+.card-stat .fs-stat {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+table thead th {
+  background-color: var(--gold);
+  color: var(--navy);
+}
+
+footer a {
+  color: #ffffff;
+}
